@@ -1,0 +1,445 @@
+:root {
+  --color-primary: #c61508;
+  --color-secondary: #08c610;
+}
+
+.market-first-blocks-fi {
+  background: url(../img/market/body-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.market-truth {
+  background: url(../img/market/truth/truth-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 90px;
+}
+
+.market-truth__sparks-left, .market-truth__sparks-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  mix-blend-mode: screen;
+  opacity: 0.2;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.market-truth__sparks-left {
+  left: 0;
+}
+
+.market-truth__sparks-right {
+  right: 0;
+}
+
+.market-truth__title {
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 41px;
+}
+
+.market-truth__title--color-primary {
+  color: var(--color-primary);
+}
+
+.market-truth__title--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-truth__text {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 33px;
+}
+
+.market-truth__text--bold {
+  font-weight: 600;
+}
+
+.market-truth-wrapper--bank-quote {
+  position: relative;
+  width: 100%;
+}
+
+.market-truth-bank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.market-truth-bank__title {
+  width: 100%;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.market-truth-bank__title--color {
+  color: var(--color-secondary);
+}
+
+.market-truth-bank__img {
+  width: 147px;
+  margin-right: 20px;
+}
+
+.market-truth-bank__desc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.market-truth-quote {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/market/speak-bg.png);
+  border-radius: 30px;
+  padding-left: 57px;
+  padding-top: 63px;
+  padding-bottom: 33px;
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 811px;
+}
+
+.market-truth-quote__text {
+  font-size: 22px;
+  line-height: 140%;
+  color: #161616;
+  margin-bottom: 30px;
+}
+
+.market-truth-quote__text--bold {
+  font-weight: 600;
+}
+
+.market-truth-quote__fire {
+  position: absolute;
+  top: -220px;
+  left: 20px;
+  width: 546px;
+  z-index: -1;
+}
+
+.market-truth-quote__money {
+  position: absolute;
+  width: 800px;
+  top: -830px;
+  left: 160px;
+  z-index: -2;
+}
+
+.market-truth-quote__arrow {
+  position: absolute;
+  bottom: -200px;
+  left: 200px;
+}
+
+.market-truth__subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.market-truth__subtitle--color-primary {
+  color: var(--color-primary);
+}
+
+.market-truth__subtitle--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-truth__chair {
+  position: absolute;
+  left: 0;
+  bottom: -350px;
+  width: 530px;
+}
+
+.market-truth__speaker {
+  position: absolute;
+  right: -30px;
+  bottom: -120px;
+  width: 930px;
+}
+
+.market-wealth-left {
+  display: inline-block;
+  width: 39%;
+  position: relative;
+}
+
+.market-wealth-left__img {
+  position: absolute;
+  bottom: -80px;
+  left: -340px;
+  width: 860px;
+  max-width: initial;
+}
+
+.market-wealth-right {
+  display: inline-block;
+  width: 60%;
+}
+
+.market-wealth-right__title {
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 41px;
+}
+
+.market-wealth-right__title--color-primary {
+  color: var(--color-primary);
+}
+
+.market-wealth-right__title--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-wealth-right__subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.market-wealth-right__subtitle--color-primary {
+  color: var(--color-primary);
+}
+
+.market-wealth-right__subtitle--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-wealth-right__text {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 33px;
+}
+
+.market-wealth-right__text--bold {
+  font-weight: 600;
+}
+
+.market-wealth-right-card {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/market/speak-bg.png);
+  border-radius: 30px;
+  padding-left: 57px;
+  padding-top: 63px;
+  padding-bottom: 33px;
+  margin-left: -57px;
+  margin-right: -60px;
+}
+
+.market-wealth-right-card__text {
+  font-size: 22px;
+  line-height: 140%;
+  color: #161616;
+  margin-bottom: 30px;
+}
+
+.market-wealth-right-card__text--bold {
+  font-weight: 600;
+}
+
+.market-wealth-right-card__fire {
+  position: absolute;
+  left: 84%;
+  bottom: 0;
+  width: 328px;
+}
+
+.market-whois {
+  position: relative;
+  padding-top: 186px;
+}
+
+.market-whois__title {
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 41px;
+  margin-bottom: 30px;
+}
+
+.market-whois__title--color-primary {
+  color: var(--color-primary);
+}
+
+.market-whois__title--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-whois__subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 110%;
+}
+
+.market-whois__subtitle--color-primary {
+  color: var(--color-primary);
+}
+
+.market-whois__subtitle--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-whois__text {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 33px;
+}
+
+.market-whois__text--bold {
+  font-weight: 600;
+}
+
+.market-whois-card {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/market/speak-bg.png);
+  border-radius: 30px;
+  padding-left: 57px;
+  padding-top: 63px;
+  padding-bottom: 33px;
+  padding-top: 38px;
+  padding-bottom: 28px;
+  max-width: 807px;
+  padding-right: 48px;
+  margin-bottom: 40px;
+  margin-left: -35px;
+}
+
+.market-whois-card__text {
+  font-size: 22px;
+  line-height: 140%;
+  color: #161616;
+  margin-bottom: 30px;
+}
+
+.market-whois-card__text--bold {
+  font-weight: 600;
+}
+
+.market-whois-card-bullets__item {
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.market-whois-card-bullets__item:before {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 100%;
+}
+
+.market-whois-card-bullets__item:last-child {
+  margin-bottom: 0;
+}
+
+.market-whois-card-bullets__item--bold {
+  font-weight: 600;
+}
+
+.market-whois-cta {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
+  -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+          box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+  border-radius: 12px;
+}
+
+.market-whois-cta__icon {
+  width: 86px;
+  position: absolute;
+  right: -40px;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.market-whois__hero {
+  position: absolute;
+  top: -145px;
+  right: -20px;
+  width: 850px;
+}
+
+.market-whois__tickets {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  width: 364px;
+}
+
+.market-whois__sparks {
+  display: none;
+}
+
+.market-likeme {
+  padding-top: 160px;
+}
+/*# sourceMappingURL=market-index.css.map */

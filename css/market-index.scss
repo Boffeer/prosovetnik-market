@@ -1,0 +1,323 @@
+:root {
+  --color-primary: #c61508;
+  --color-secondary: #08c610;
+}
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+
+.market-first-blocks-fi {
+  background: url(../img/market/body-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.market-truth {
+  background: url(../img/market/truth/truth-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 90px;
+}
+
+.market-truth__sparks {
+  &-left,
+  &-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    mix-blend-mode: screen;
+    opacity: 0.2;
+    filter: blur(10px);
+  }
+  &-left {
+    left: 0;
+  }
+  &-right {
+    right: 0;
+  }
+}
+
+@mixin h2() {
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 41px;
+  &--color-primary {
+    color: $color-primary;
+  }
+  &--color-secondary {
+    color: $color-secondary;
+  }
+}
+
+.market-truth__title {
+  @include h2;
+}
+
+@mixin text-regular() {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 33px;
+  &--bold {
+    font-weight: 600;
+  }
+}
+.market-truth__text {
+  @include text-regular;
+}
+.market-truth-wrapper--bank-quote {
+  position: relative;
+  width: 100%;
+}
+.market-truth-bank {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+  &__title {
+    width: 100%;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+    &--color {
+      color: $color-secondary;
+    }
+  }
+  &__img {
+    width: 147px;
+    margin-right: 20px;
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+}
+
+@mixin market-card() {
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/market/speak-bg.png);
+  border-radius: 30px;
+  padding-left: 57px;
+  padding-top: 63px;
+  padding-bottom: 33px;
+  &__text {
+    font-size: 22px;
+    line-height: 140%;
+    color: #161616;
+    margin-bottom: 30px;
+    &--bold {
+      font-weight: 600;
+    }
+  }
+}
+.market-truth-quote {
+  @include market-card();
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 811px;
+  &__fire {
+    position: absolute;
+    top: -220px;
+    left: 20px;
+    width: 546px;
+    z-index: -1;
+  }
+  &__money {
+    position: absolute;
+    width: 800px;
+    top: -830px;
+    left: 160px;
+    z-index: -2;
+  }
+  &__arrow {
+    position: absolute;
+    bottom: -200px;
+    left: 200px;
+  }
+}
+
+@mixin h3() {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  &--color-primary {
+    color: $color-primary;
+  }
+  &--color-secondary {
+    color: $color-secondary;
+  }
+}
+
+.market-truth__subtitle {
+  @include h3;
+}
+.market-truth__chair {
+  position: absolute;
+  left: 0;
+  bottom: -350px;
+  width: 530px;
+}
+.market-truth__speaker {
+  position: absolute;
+  right: -30px;
+  bottom: -120px;
+  width: 930px;
+}
+
+// 1wealth
+.market-wealth-left {
+  display: inline-block;
+  width: 39%;
+  position: relative;
+  &__img {
+    position: absolute;
+    bottom: -80px;
+    left: -340px;
+    width: 860px;
+    max-width: initial;
+  }
+}
+.market-wealth-right {
+  display: inline-block;
+  width: 60%;
+}
+.market-wealth-right__title {
+  @include h2;
+}
+.market-wealth-right__subtitle {
+  @include h3;
+  margin-bottom: 50px;
+}
+.market-wealth-right__text {
+  @include text-regular();
+}
+.market-wealth-right-card {
+  @include market-card;
+  margin-left: -57px;
+  margin-right: -60px;
+  &__fire {
+    position: absolute;
+    left: 84%;
+    bottom: 0;
+    width: 328px;
+  }
+}
+
+.market {
+  &-whois {
+    position: relative;
+    padding-top: 186px;
+    &__title {
+      @include h2();
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      @include h3();
+      font-size: 22px;
+      line-height: 110%;
+    }
+    &__text {
+      @include text-regular();
+    }
+    &-card {
+      @include market-card();
+      padding-top: 38px;
+      padding-bottom: 28px;
+      max-width: 807px;
+      padding-right: 48px;
+      margin-bottom: 40px;
+      margin-left: -35px;
+      &-bullets {
+        &__item {
+          font-size: 22px;
+          line-height: 140%;
+          color: #000000;
+          margin-bottom: 14px;
+          position: relative;
+          &:before {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            border: 2px solid $color-primary;
+            border-radius: 100%;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &--bold {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    &-cta {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 60px;
+      padding-left: 60px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffffff;
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        #c61508 0%,
+        #c61508 0.01%,
+        #940606 100%
+      );
+      box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3),
+        inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+      border-radius: 12px;
+      &__icon {
+        width: 86px;
+        position: absolute;
+        right: -40px;
+        top: 25%;
+        transform: translateY(-50%);
+      }
+    }
+    &__hero {
+      position: absolute;
+      top: -145px;
+      right: -20px;
+      width: 850px;
+    }
+    &__tickets {
+      position: absolute;
+      top: 380px;
+      left: 0;
+      width: 364px;
+    }
+    &__sparks {
+      display: none;
+    }
+  }
+  &-likeme {
+    padding-top: 160px;
+  }
+}
