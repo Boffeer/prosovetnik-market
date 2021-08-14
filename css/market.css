@@ -53,13 +53,23 @@
 
 html {
   overflow: auto;
-  background: linear-gradient(
+  /* background: linear-gradient(
       90deg,
       rgba(31, 43, 75, 0.2) 62.43%,
       #050a15 99.58%
     ),
     linear-gradient(90deg, rgba(31, 43, 75, 0.2) 67.96%, #050a15 87.96%),
-    linear-gradient(90deg, #2b0300 63.14%, #270401 85.73%);
+    linear-gradient(90deg, #2b0300 63.14%, #270401 85.73%); */
+  background: linear-gradient(
+    90deg,
+    #0d0f1c 8.85%,
+    #1f1624 21.35%,
+    #381a28 47.4%,
+    #1f1624 76.56%,
+    #0d0f1c 94.27%
+  );
+
+  background-size: contain;
 }
 
 body {

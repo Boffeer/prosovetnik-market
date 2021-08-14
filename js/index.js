@@ -32,4 +32,56 @@ $(document).ready(function () {
     // ).addClass("market-reviews-slider-slide--prev");
     console.log(prevSlide, currentSlide, nextSlide);
   });
+
+  /*
+  	Toggle Dropdown
+   */
+  function handleDropdown(dropdownsClassesArray) {
+    dropdownsClassesArray.map(function (dropdownItemClass) {
+      $(dropdownItemClass).each(function () {
+        $(this).on("click", function () {
+          var parentClassList = $(this).parent().attr("class");
+          if (parentClassList.includes("--opened")) {
+            // .removeClass(dropdownItemClass + '--opened");'
+            var dropDownBottomClassName = $(this)
+              .parent()
+              .children()[1]
+              .getAttribute("class");
+            $(this)
+              .parent()
+              .find("." + dropDownBottomClassName)
+              .slideUp();
+            console.log(dropDownBottomClassName);
+            $(this)
+              .parent()
+              .removeClass(
+                dropdownItemClass.replace(".", "").replace("-top", "") +
+                  "--opened"
+              );
+          } else {
+            var dropDownBottomClassName = $(this)
+              .parent()
+              .children()[1]
+              .getAttribute("class");
+            $(this)
+              .parent()
+              .find("." + dropDownBottomClassName)
+              .slideDown();
+            $(this)
+              .parent()
+              .addClass(
+                dropdownItemClass.replace(".", "").replace("-top", "") +
+                  "--opened"
+              );
+          }
+        });
+      });
+    });
+  }
+
+  const dropdownsClassesArray = [
+    ".market-programm-dropdowns-dropdown-top",
+    ".market-faq-dropdowns-dropdown-top",
+  ];
+  handleDropdown(dropdownsClassesArray);
 });
