@@ -65,7 +65,7 @@ html {
 body {
   position: relative;
   z-index: 1;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
