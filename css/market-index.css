@@ -20,6 +20,10 @@
   padding-bottom: 90px;
 }
 
+.market-truth .container {
+  z-index: 1;
+}
+
 .market-truth__sparks-left, .market-truth__sparks-right {
   position: absolute;
   top: 0;
@@ -28,6 +32,7 @@
   opacity: 0.2;
   -webkit-filter: blur(10px);
           filter: blur(10px);
+  z-index: -1;
 }
 
 .market-truth__sparks-left {
@@ -191,6 +196,7 @@
   display: inline-block;
   width: 39%;
   position: relative;
+  z-index: 3;
 }
 
 .market-wealth-left__img {
@@ -285,6 +291,11 @@
 .market-whois {
   position: relative;
   padding-top: 186px;
+  z-index: 4;
+  background-image: url(../img/market/whois/whois-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .market-whois__title {
@@ -441,5 +452,116 @@
 
 .market-likeme {
   padding-top: 160px;
+  padding-bottom: 450px;
+  position: relative;
+}
+
+.market-likeme-left {
+  width: 29%;
+  display: inline-block;
+}
+
+.market-likeme-left__hero {
+  max-width: initial;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 977px;
+}
+
+.market-likeme-right {
+  width: 65%;
+  display: inline-block;
+}
+
+.market-likeme-right__title {
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 41px;
+}
+
+.market-likeme-right__title--color-primary {
+  color: var(--color-primary);
+}
+
+.market-likeme-right__title--color-secondary {
+  color: var(--color-secondary);
+}
+
+.market-likeme-right-bullets-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.market-likeme-right-bullets-card__img {
+  width: 101px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+.market-likeme-right-bullets-card__desc {
+  font-size: 22px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.market-likeme-right-bullets-card__desc--bold {
+  font-weight: 600;
+}
+
+.market-likeme__oscar {
+  position: absolute;
+  top: 180px;
+  right: 19%;
+  width: 159px;
+}
+
+.market-likeme__megafon {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 928px;
+  z-index: 2;
+}
+
+.market-likeme__right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 670px;
+}
+
+.market-likeme__sparks-left, .market-likeme__sparks-right {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: screen;
+  opacity: 0.09;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  z-index: -1;
+}
+
+.market-likeme__sparks-left {
+  background-image: url(../img/market/likeme/likeme-sparks-left.png);
+  left: 0;
+  width: 857px;
+}
+
+.market-likeme__sparks-right {
+  right: 0;
+  width: 600px;
 }
 /*# sourceMappingURL=market-index.css.map */
