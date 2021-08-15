@@ -43,8 +43,7 @@ $color-secondary: var(--color-secondary);
   &:hover {
     background-color: #c61508;
   }
-  &:active:foucs:before {
-  &:hover:foucs:before {
+  &:active:foucs:hover:before {
     content: "";
   }
 }

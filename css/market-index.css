@@ -489,7 +489,7 @@ section {
   background-color: #c61508;
 }
 
-.market-whois-cta:hover:foucs:before {
+.market-whois-cta:active:foucs:hover:before {
   content: "";
 }
 
@@ -835,11 +835,6 @@ section {
   left: -3%;
 }
 
-.market-programm-dropdowns-dropdown--opened .market-faq-dropdowns-dropdown-bottom,
-.market-programm-dropdowns-dropdown--opened .market-programm-dropdowns-dropdown-bottom {
-  display: block;
-}
-
 .market-programm__left {
   width: 540px;
   position: absolute;
@@ -965,7 +960,7 @@ section {
   background-color: #c61508;
 }
 
-.market-game-enroll:hover:foucs:before {
+.market-game-enroll:active:foucs:hover:before {
   content: "";
 }
 
@@ -1462,7 +1457,7 @@ section {
   background-color: #c61508;
 }
 
-.market-pricing-table-bundle__enroll:hover:foucs:before {
+.market-pricing-table-bundle__enroll:active:foucs:hover:before {
   content: "";
 }
 
@@ -1697,11 +1692,6 @@ section {
   left: -3%;
 }
 
-.market-faq-dropdowns-dropdown--opened .market-faq-dropdowns-dropdown-bottom,
-.market-faq-dropdowns-dropdown--opened .market-programm-dropdowns-dropdown-bottom {
-  display: block;
-}
-
 .market-faq-dropdowns-dropdown-top-name__title {
   color: #fff;
   font-size: 22px;
@@ -1862,7 +1852,7 @@ section {
   background-color: #c61508;
 }
 
-.market-brain-card__enroll:hover:foucs:before {
+.market-brain-card__enroll:active:foucs:hover:before {
   content: "";
 }
 
@@ -2010,7 +2000,7 @@ section {
   background-color: #c61508;
 }
 
-.market-callback-form__submit:hover:foucs:before {
+.market-callback-form__submit:active:foucs:hover:before {
   content: "";
 }
 
