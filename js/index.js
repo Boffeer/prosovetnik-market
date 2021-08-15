@@ -16,6 +16,7 @@ $(document).ready(function () {
     dots: true,
     arrows: true,
     speed: 900,
+    adaptiveHeight: true,
   });
 
   $(".market-reviews-slider").on("beforeChange", function () {

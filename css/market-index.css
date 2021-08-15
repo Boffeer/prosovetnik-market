@@ -481,6 +481,7 @@ section {
   padding-right: 48px;
   margin-bottom: 40px;
   margin-left: -35px;
+  background-position: center right;
 }
 
 .market-whois-card__text {
@@ -1230,6 +1231,16 @@ section {
   color: var(--color-primary);
 }
 
+.market-reviews-slider-slide-profile__occupie {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #152536;
+  opacity: 0.4;
+  padding-left: 10px;
+  margin-bottom: 24px;
+}
+
 .market-reviews-slider-slide__review {
   font-size: 20px;
   line-height: 150%;
@@ -1880,6 +1891,7 @@ section {
   position: relative;
   margin-left: 80px;
   padding-bottom: 60px;
+  background-position: center right;
 }
 
 .market-brain-card__text {

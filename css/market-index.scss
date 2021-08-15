@@ -490,6 +490,7 @@ section {
       padding-right: 48px;
       margin-bottom: 40px;
       margin-left: -35px;
+      background-position: center right;
       &-bullets {
         &__item {
           font-size: 22px;
@@ -976,6 +977,15 @@ section {
               color: $color-primary;
             }
           }
+          &__occupie {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            color: #152536;
+            opacity: 0.4;
+            padding-left: 10px;
+            margin-bottom: 24px;
+          }
         }
         &__review {
           font-size: 20px;
@@ -1354,6 +1364,7 @@ section {
       position: relative;
       margin-left: 80px;
       padding-bottom: 60px;
+      background-position: center right;
       &__brain {
         position: absolute;
         width: 370px;
