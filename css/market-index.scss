@@ -18,6 +18,8 @@ $color-secondary: var(--color-secondary);
 $bg-grad: var(--bg-grad);
 
 .market-first__btn {
+  display: block;
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 60px;
@@ -333,6 +335,7 @@ section {
   padding-left: 57px;
   padding-top: 63px;
   padding-bottom: 33px;
+  padding-right: 40px;
   &__text {
     font-size: 22px;
     line-height: 140%;
@@ -399,6 +402,7 @@ section {
   right: -30px;
   bottom: -120px;
   width: 930px;
+  z-index: 2;
 }
 
 // 1wealth
@@ -678,6 +682,7 @@ section {
         position: relative;
         width: 22px;
         height: 22px;
+        margin-left: 30px;
         &:before {
           content: "";
           display: block;
@@ -1460,7 +1465,7 @@ section {
         color: #000000;
         margin-bottom: 20px;
       }
-      &__descriptor {
+      &__desc {
         font-weight: normal;
         font-size: 22px;
         line-height: 120%;
@@ -1776,6 +1781,12 @@ section {
   display: block;
 }
 
+@media (max-width: 1801px) {
+  .market-truth__title:before {
+    top: -400px;
+    width: 641px;
+  }
+}
 @media (max-width: 1751px) {
   .market-truth__speaker {
     right: -90px;
@@ -1798,4 +1809,827 @@ section {
 
 .market-adviser:after {
   pointer-events: none;
+}
+
+@media (max-width: 1600px) {
+  .market-header__popcorn {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .market-first__bigtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .market-header__chart-right {
+    right: -370px;
+    top: -50px;
+  }
+  .market-header__sparks-left {
+    display: none;
+  }
+  .market-truth__title:before {
+    display: none;
+  }
+}
+
+@media (max-width: 1640px) and (min-width: 1201px) {
+  .market-truth__speaker {
+    right: -160px;
+  }
+  .market-truth__chair {
+    display: none;
+  }
+  .market-wealth-left__img {
+    width: 620px;
+    left: -130px;
+    bottom: 170px;
+  }
+  .market-whois__hero {
+    z-index: -1;
+  }
+  .market-whois__tickets {
+    display: none;
+  }
+  .market-likeme__hero {
+    left: -200px;
+    height: 900px;
+  }
+  .market-likeme__right {
+    right: -220px;
+    top: -80px;
+  }
+  .market-programm__left {
+    width: 260px;
+    top: -240px;
+  }
+  .market-reviews {
+    padding-bottom: 80px;
+  }
+  .market-brain {
+    &-card {
+      &__text {
+        min-width: 280px;
+        width: 50%;
+        br {
+          display: none;
+        }
+      }
+      &__hero {
+        position: absolute;
+        width: 535px;
+        top: -90px;
+        right: -6vw;
+      }
+    }
+  }
+  .market-callback-form {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1640px) {
+  .market-game__hero {
+    right: 0;
+    width: 770px;
+  }
+  .container--game {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (max-width: 1480px) {
+  .market-truth__speaker {
+    bottom: -170px;
+  }
+}
+@media (max-width: 1410px) {
+  .market-truth__speaker {
+    width: 860px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .market-truth__speaker {
+    width: 760px;
+    bottom: -240px;
+    right: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .market-truth-quote {
+    margin-bottom: 30px;
+  }
+  .market-truth-quote {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .market-truth-quote__money {
+    left: unset;
+    right: -450px;
+    width: 680px;
+    top: -760px;
+  }
+  .market-truth-quote__fire {
+    right: -80px;
+    left: unset;
+  }
+  .market-truth-quote__arrow {
+    display: none;
+  }
+  .market-truth__sparks-right {
+    top: 120vh;
+  }
+  .market-truth__speaker {
+    bottom: 100px;
+  }
+}
+@media (max-width: 1110px) {
+  .market-truth-quote__fire,
+  .market-truth-quote__money {
+    display: none;
+  }
+  .market-truth__speaker {
+    bottom: 130px;
+  }
+}
+
+@media (max-width: 991px) {
+  .market-truth__speaker {
+    bottom: unset;
+    z-index: -1;
+    top: 470px;
+    width: 460px;
+  }
+}
+
+// @media (max-width: 768px) {
+// @media (max-width: 992px) {
+@media (max-width: 1200px) {
+  @mixin h2() {
+    font-size: 36px;
+    margin-bottom: 21px;
+  }
+  .market-truth__speaker {
+    position: relative;
+    right: -20px;
+    top: unset;
+    bottom: unset;
+    display: none;
+  }
+  .market-truth__sparks-left {
+    width: 50%;
+    display: none;
+  }
+  .market-truth__sparks-right {
+    display: none;
+  }
+  // 1truth768
+  .market-truth {
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 30px;
+  }
+  .market-truth__title,
+  .market-wealth-right__title,
+  .market-whois__title,
+  .market-likeme-right__title,
+  .market-programm__title,
+  .market-game__title,
+  .market-reviews__title,
+  .market-pricing__title,
+  .market-faq__title,
+  .market-brain-card__title,
+  .market-callback-form__title,
+  .market-popups-bundle__title,
+  .market-popups-callback__title {
+    @include h2();
+  }
+  @mixin text-regular() {
+    font-size: 22px;
+    margin-bottom: 21px;
+  }
+  .market-truth__text,
+  .market-truth-bank__desc,
+  .market-truth-quote__text,
+  .market-truth__text,
+  .market-wealth-right__text,
+  .market-wealth-right-card__text,
+  .market-whois-card-bullets__item,
+  .market-likeme-right-bullets-card__desc,
+  .market-programm-dropdowns-dropdown-top-name__subtitle,
+  .market-programm-dropdowns-dropdown-bottom__item,
+  .market-game__text,
+  .market-game-card__text,
+  .market-game-bullets-card__desc,
+  .market-reviews-slider-slide__review,
+  .market-faq-dropdowns-dropdown-bottom__text,
+  .market-brain-card__text,
+  .market-callback-form__desc,
+  .market-callback-form-field__input,
+  .market-callback-form__submit,
+  .market-popups-bundle-form__submit,
+  .market-popups-callback-form__submit,
+  .market-first__btn,
+  .market-whois-cta,
+  .market-whois-cta,
+  .market-game-enroll,
+  .market-whois__text,
+  .market-pricing-table-bundle-cell__desc,
+  .market-pricing-table-bundle__enroll {
+    @include text-regular();
+  }
+  @mixin h3() {
+    font-size: 30px;
+    margin-bottom: 21px;
+  }
+  .market-truth-bank__title,
+  .market-truth__subtitle,
+  .market-whois__subtitle,
+  .market-programm__subtitle,
+  .market-pricing__subtitle,
+  .market-pricing-table-bundle--standard
+    .market-pricing-table-bundle-cell:before,
+  .market-pricing-table-bundle-cost__value,
+  .market-faq__sparks-right,
+  .market-popups-bundle__name,
+  .market-popups-bundle-pricing__current,
+  .market-pricing-table-bundle__title,
+  .market-wealth-right__subtitle,
+  .market-reviews-slider-slide-profile-about__name {
+    @include h3();
+  }
+  .market-truth-bank {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .market-truth-bank__desc {
+    text-align: left;
+  }
+  @mixin market-card() {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__text,
+    &-quote__text {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-bullets__item {
+      &:before {
+        top: 5px;
+      }
+    }
+  }
+  .market-game-card,
+  .market-whois-card,
+  .market-truth-quote,
+  .market-wealth-right-card {
+    @include market-card();
+  }
+
+  @mixin market-card-width-fixer() {
+    min-width: 300px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .market-brain-card,
+  .market-whois-card,
+  .market-wealth-right-card,
+  .market-game-card,
+  .market-truth-quote {
+    @include market-card-width-fixer();
+  }
+  .market-whois-card {
+    padding-left: 40px;
+  }
+  // 1wealth 768
+  .market-wealth-left {
+    display: none;
+  }
+  .market-wealth-right {
+    width: 100%;
+    text-align: center;
+  }
+  .market-wealth-right-card {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  // 1whois 768
+  .market-whois {
+    padding-top: 180px;
+    &__hero {
+      max-width: 428px;
+      width: 100%;
+      margin-left: auto;
+      position: absolute;
+      top: -90px;
+      margin-bottom: -270px;
+      z-index: -1;
+    }
+    &__sparks {
+      height: calc(45%);
+    }
+    &__tickets {
+      top: 50px;
+      left: 0;
+      width: 284px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      line-height: 100%;
+      max-width: 560px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      text-align: center;
+    }
+    &-cta {
+      margin-top: 30px;
+    }
+  }
+  @mixin buttonPrimary() {
+    margin-top: 30px;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    width: 100%;
+  }
+  .market-brain-card__enroll,
+  .market-callback-form__submit,
+  .market-popups-bundle-form__submit,
+  .market-popups-callback-form__submit,
+  .market-game-enroll,
+  .market-pricing-table-bundle__enroll,
+  .market-whois-cta,
+  .market-first__btn {
+    @include buttonPrimary();
+  }
+  // 1likeme768
+  .container--likeme {
+    position: relative;
+    z-index: 2;
+  }
+  .market-likeme {
+    padding-top: 80px;
+    padding-bottom: 0;
+    &__hero {
+      position: absolute;
+      top: 130px;
+      left: -100px;
+      width: 490px;
+      height: auto;
+      z-index: 1;
+      margin-bottom: -100px;
+    }
+    &__oscar,
+    &__sparks-left,
+    &__sparks-right {
+      display: none;
+    }
+    &__right {
+      right: 0;
+      top: -110px;
+      width: 390px;
+    }
+    &-left {
+      display: none;
+    }
+    &-right {
+      width: 100%;
+      &__title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      &-bullets {
+        max-width: 500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        &-card {
+          flex-direction: column;
+          margin-bottom: 25px;
+        }
+        &-card__img {
+          width: 81px;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        &-card__desc {
+          margin-bottom: 0;
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    &__megafon {
+      position: static;
+      margin-left: auto;
+    }
+  }
+  .market-faq-dropdowns,
+  .market-programm-dropdowns {
+    max-width: 550px;
+  }
+  .market-programm__left {
+    width: 160px;
+    top: -80px;
+  }
+  @mixin market-dropdown() {
+    padding-bottom: 25px;
+    &-top {
+      padding-top: 25px;
+      &-name {
+        &__subtitle {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-bottom {
+      padding-top: 20px;
+      &__item:before {
+        top: 10px;
+      }
+    }
+  }
+  .market-faq-dropdowns-dropdown,
+  .market-programm-dropdowns-dropdown {
+    @include market-dropdown();
+  }
+  .market-programm__right {
+    width: 160px;
+    bottom: 0;
+  }
+  .market-programm {
+    padding-bottom: 0;
+  }
+
+  // 3game992
+  .market-game {
+    text-align: center;
+    padding-top: 0;
+    &__hero {
+      position: static;
+      width: 480px;
+      margin-left: auto;
+      margin-bottom: -480px;
+      margin-right: -100px;
+    }
+    &__sparks-left {
+      display: none;
+    }
+    &-enroll {
+      margin-bottom: 50px;
+      &__icon {
+        display: none;
+      }
+    }
+    &-bullets {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-card {
+        min-width: 300px;
+        width: 34%;
+        margin-bottom: 20px;
+        &__img {
+          height: 106px;
+        }
+      }
+    }
+    &__sparks-right {
+      display: none;
+    }
+    &__smoke-right,
+    &__smoke-left {
+      bottom: 20px;
+      width: 390px;
+    }
+  }
+  .market-reviews {
+    padding-bottom: 100px;
+  }
+  .market-faq {
+    padding-bottom: 80px;
+  }
+  .market-brain-card__hero {
+    right: 20px;
+  }
+  .market-brain {
+    &-card {
+      width: 100%;
+      padding-right: 50px;
+      overflow: hidden;
+      &__text {
+        min-width: 280px;
+        width: 50%;
+        br {
+          display: none;
+        }
+      }
+      &__brain {
+        display: none;
+      }
+      &__enroll {
+        margin-left: 0;
+      }
+      &__hero {
+        position: absolute;
+        right: 100px;
+        top: 40px;
+        width: 450px;
+      }
+    }
+  }
+
+  // 3pricing992
+  .market-pricing-table {
+    justify-content: center;
+  }
+  .market-pricing-table-bundle__title {
+    margin-bottom: 40px;
+  }
+  .market-pricing-table-bundle-cell {
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+  .market-pricing-table-bundle--standard
+    .market-pricing-table-bundle-cell--feedback:before {
+    width: 100%;
+  }
+  .market-pricing-table-bundle--standard
+    .market-pricing-table-bundle-cell:before {
+    width: calc(200% + 27px);
+    text-align: center;
+    font-size: 20px !important;
+    top: unset;
+    bottom: 40px;
+    color: #000;
+    background: #fff;
+    border-radius: 12px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: -108%;
+
+    width: calc(208.2%);
+    text-align: center;
+    font-size: 20px !important;
+    top: unset;
+    bottom: 40px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: -108%;
+    backdrop-filter: blur(20px);
+  }
+  .market-pricing-table-bundle--standard
+    .market-pricing-table-bundle-cell:after {
+    content: "";
+    display: none;
+  }
+  .market-pricing-table-bundle__enroll {
+    max-width: 275px;
+  }
+  .market-pricing__smoke-left,
+  .market-pricing__smoke-right {
+    width: 300px;
+  }
+  .market-pricing__ticket {
+    left: -50px;
+    width: 316px;
+  }
+
+  .market-popups-callback-form__input,
+  .market-popups-bundle-form__input,
+  .market-callback-form-field__input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .market-first__btn {
+    margin-left: 0;
+    max-width: 280px;
+  }
+  .market-callback {
+    padding-bottom: 100px;
+    &-form {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 300px;
+      padding-left: 60px;
+      padding-right: 60px;
+      width: 54%;
+      box-sizing: border-box;
+      &__submit {
+        max-width: 100%;
+      }
+      &__desc {
+        // margin-bottom: 20px;
+        br {
+          display: none;
+        }
+      }
+      &-field {
+        &__input {
+          text-align: center;
+        }
+        &--tel {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__hero {
+      display: none;
+    }
+  }
+  .market-brain-card__hero {
+    right: 5px;
+  }
+}
+
+@media (max-width: 999px) {
+  .market-first__btn {
+    margin-left: auto;
+  }
+  .market-truth__chair {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .market-truth {
+    padding-top: 70px;
+  }
+  .market-whois__tickets {
+    top: -20px;
+    left: 0px;
+    width: 254px;
+  }
+  .market-programm__left {
+    top: 0;
+  }
+  .market-whois__subtitle {
+    max-width: 420px;
+  }
+}
+@media (max-width: 768px) {
+  @mixin text-regular() {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .market-truth__text,
+  .market-truth-bank__desc,
+  .market-truth-quote__text,
+  .market-truth__text,
+  .market-wealth-right__text,
+  .market-wealth-right-card__text,
+  .market-whois-card-bullets__item,
+  .market-likeme-right-bullets-card__desc,
+  .market-programm-dropdowns-dropdown-top-name__subtitle,
+  .market-programm-dropdowns-dropdown-bottom__item,
+  .market-game__text,
+  .market-game-card__text,
+  .market-game-bullets-card__desc,
+  .market-reviews-slider-slide__review,
+  .market-faq-dropdowns-dropdown-bottom__text,
+  .market-brain-card__text,
+  .market-callback-form__desc,
+  .market-callback-form-field__input,
+  .market-callback-form__submit,
+  .market-popups-bundle-form__submit,
+  .market-popups-callback-form__submit,
+  .market-first__btn,
+  .market-whois-cta,
+  .market-whois-cta,
+  .market-game-enroll,
+  .market-whois__text,
+  .market-pricing-table-bundle-cell__desc,
+  .market-pricing-table-bundle__enroll {
+    @include text-regular();
+  }
+  @mixin h3() {
+    font-size: 18px;
+    margin-bottom: 21px;
+  }
+  .market-truth-bank__title,
+  .market-truth__subtitle,
+  .market-whois__subtitle,
+  .market-programm__subtitle,
+  .market-pricing__subtitle,
+  .market-pricing-table-bundle--standard
+    .market-pricing-table-bundle-cell:before,
+  .market-pricing-table-bundle-cost__value,
+  .market-faq__sparks-right,
+  .market-popups-bundle__name,
+  .market-popups-bundle-pricing__current,
+  .market-pricing-table-bundle__title,
+  .market-wealth-right__subtitle,
+  .market-reviews-slider-slide-profile-about__name {
+    @include h3();
+  }
+  @mixin h2() {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .market-truth__title,
+  .market-wealth-right__title,
+  .market-whois__title,
+  .market-likeme-right__title,
+  .market-programm__title,
+  .market-game__title,
+  .market-reviews__title,
+  .market-pricing__title,
+  .market-faq__title,
+  .market-brain-card__title,
+  .market-callback-form__title,
+  .market-popups-bundle__title,
+  .market-popups-callback__title {
+    @include h2();
+  }
+  .market-likeme-right-bullets {
+    max-width: 320px;
+  }
+  .market-game__hero {
+    max-width: 590px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: -320px;
+    margin-right: 0;
+  }
+  .market-game-enroll {
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .market-game-bullets-card__img {
+    height: 76px;
+    margin-bottom: 5px;
+  }
+  .market-pricing__popcorn {
+    width: 280px;
+  }
+  .market-pricing__ticket {
+    display: none;
+  }
+  .market-brain-card {
+    text-align: center;
+    &__hero {
+      position: relative;
+      margin-bottom: -140px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .market-brain-card__enroll {
+    margin-left: auto;
+  }
+  .market-brain-card__text {
+    width: 100%;
+  }
+  .market-callback {
+    padding-top: 100px;
+    &-form {
+      max-width: 560px;
+      width: 100%;
+    }
+  }
+  .market-game__smoke-left,
+  .market-game__smoke-right {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .poppa-block-scrolling {
+    padding-right: 0;
+  }
 }
