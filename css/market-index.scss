@@ -1891,12 +1891,12 @@ section {
           display: none;
         }
       }
-      &__hero {
-        position: absolute;
-        width: 535px;
-        top: -90px;
-        right: -6vw;
-      }
+      // &__hero {
+      //   position: absolute;
+      //   width: 535px;
+      //   top: -90px;
+      //   right: -6vw;
+      // }
     }
   }
   .market-callback-form {
@@ -1929,6 +1929,11 @@ section {
   .market-reviews-slider .slick-prev {
     left: 14vw;
   }
+  .market-brain-card__hero {
+    width: 625px;
+    top: -160px;
+    right: -14vw;
+  }
 }
 @media (max-width: 1410px) {
   .market-truth__speaker {
@@ -1953,6 +1958,9 @@ section {
   }
   .market-reviews-slider .slick-prev {
     left: 7vw;
+  }
+  .market-brain-card__hero {
+    right: -11vw;
   }
 }
 
@@ -1993,6 +2001,9 @@ section {
   .market-truth__speaker {
     bottom: 130px;
   }
+  .market-pricing__popcorn {
+    width: 350px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2001,6 +2012,10 @@ section {
     z-index: -1;
     top: 470px;
     width: 460px;
+  }
+  .market-pricing__popcorn {
+    width: 270px;
+    top: -120px;
   }
 }
 
@@ -2567,6 +2582,22 @@ section {
   .market-reviews-slider-slide--prev .market-reviews-slider-slide__inner {
     opacity: 0;
   }
+  .market-popups-bundle-form__input,
+  .market-popups-callback-form__input {
+    margin-bottom: 20px;
+  }
+  .market-popups-callback-form__submit {
+    margin-top: 0;
+  }
+  .market-popups-bundle-pricing__current {
+    margin-bottom: 0;
+  }
+  .market-popups-bundle-form__submit {
+    margin-top: 0;
+  }
+  .market-popups-bundle-pricing__old {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -2584,6 +2615,9 @@ section {
       right: -9px;
     }
   }
+  .market-wealth-right-card__text br {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2600,6 +2634,9 @@ section {
   }
   .market-whois__subtitle {
     max-width: 420px;
+  }
+  .market-brain-card__hero {
+    width: 360px;
   }
 }
 @media (max-width: 768px) {
@@ -2700,7 +2737,7 @@ section {
   }
   .market-game-bullets-card__img {
     height: 76px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .market-pricing__popcorn {
     width: 280px;
@@ -2740,6 +2777,34 @@ section {
   }
   .market-reviews-slider-slide-profile-about__name {
     margin-bottom: 5px;
+  }
+  .market-programm__left {
+    top: -140px;
+  }
+  .market-programm__right {
+    display: none;
+  }
+  .market-pricing__popcorn {
+    top: -200px;
+  }
+  .market-pricing-table-bundle-cost__value:after {
+    font-size: 16px;
+  }
+  .market-popups-bundle-pricing__current {
+    margin-bottom: 0;
+  }
+  .market-pricing-table-bundle__enroll {
+    font-size: 14px;
+    max-width: 255px;
+  }
+  .market-pricing-table-bundle-credit {
+    max-width: 255px;
+  }
+  .market-popups-bundle-pricing__old {
+    font-size: 14px;
+  }
+  .market-brain-card {
+    max-width: 568px;
   }
 }
 @media (max-width: 578px) {
@@ -3066,8 +3131,10 @@ section {
       }
     }
   }
+  .market-popups-callback-form-privacy__desc,
+  .market-popups-bundle-form-privacy__desc,
   .market-callback-form-privacy__desc {
-    font-size: 10px;
+    font-size: 9px;
   }
   .market-popups-callback-form__input,
   .market-popups-bundle-form__input,
@@ -3106,6 +3173,21 @@ section {
     width: 150px;
     top: -200px;
   }
+  .market-pricing__title,
+  .market-programm__title {
+    br {
+      display: initial;
+    }
+  }
+  .market-faq-dropdowns-dropdown-top-name__title {
+    max-width: 80%;
+  }
+  .market-brain-card__text {
+    min-width: auto;
+  }
+  .market-faq-dropdowns-dropdown-top-name__title {
+    font-size: 17px;
+  }
 }
 @media (max-width: 456px) {
   .market-truth-bank__desc {
@@ -3118,6 +3200,71 @@ section {
   .market-truth-quote {
     max-width: 320px;
     top: 80vw;
+  }
+  .market-popups-bundle__title,
+  .market-popups-callback__title {
+    margin-bottom: 5px;
+  }
+  .market-popups-bundle__subtitle,
+  .market-popups-callback__subtitle {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .market-popups-callback,
+  .market-popups-bundle {
+    padding-bottom: 20px;
+  }
+  .market-popups-bundle-form,
+  .market-popups-callback-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .market-popups-callback-form-prefered-button {
+    height: 60px;
+  }
+  .market-popups-callback-form-prefered-button__icon svg {
+    height: 24px;
+  }
+  .market-popups-callback-form-prefered {
+    margin-bottom: 10px;
+  }
+  .market-popups-callback-form__input,
+  .market-popups-bundle-form__input,
+  .market-callback-form-field__input {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-bottom: 15px;
+  }
+  .market-popups-callback-form__submit,
+  .market-popups-bundle-form__submit,
+  .market-callback-form-field__submit {
+    font-size: 14px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  .market-popups-bundle-pricing__current {
+    margin-bottom: 0;
+  }
+  .market-popups-bundle-pricing {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .market-popups-bundle-form__submit {
+    margin-top: 0;
+  }
+  .market-popups-callback-form__title {
+    text-align: center;
+  }
+  .market-callback-form-field__input {
+    margin-bottom: 0;
+  }
+  .market-callback-form__submit {
+    margin-top: 0;
+  }
+  .market-callback-form-field--tel {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 456px) and (max-width: 577px) {
@@ -3151,12 +3298,39 @@ section {
   }
 }
 
+@media (max-width: 414px) {
+  .market-pricing__title {
+    br {
+      display: none;
+    }
+  }
+}
 @media (max-width: 320px) {
   .market-truth-quote {
     max-width: 280px;
   }
   .market-truth__speaker {
     margin-bottom: 40px;
+  }
+  .market-whois-cta__icon {
+    display: none;
+  }
+  .market-popups-callback-form__title {
+    text-align: center;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .market-game__title {
+    br {
+      display: initial;
+    }
+  }
+  .market-footer-wrap {
+    flex-direction: column;
+  }
+  .market-footer-wrap__link {
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -3169,4 +3343,8 @@ section {
   font-weight: 100;
   top: 0;
   right: 0;
+}
+
+.market-popups {
+  display: none;
 }
