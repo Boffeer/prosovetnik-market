@@ -17,8 +17,43 @@ $(document).ready(function () {
     arrows: true,
     speed: 900,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          centerMode: false,
+          //   adaptiveHeight: false,
+          speed: 300,
+        },
+      },
+    ],
   });
 
+  /**
+   * Slick mobile adaptive height fixer
+   *
+   */
+
+  if (window.innerWidth <= 1200) {
+    function fixSliderHeight() {
+      var currentHeight = $(
+        ".market-reviews-slider .slick-current .market-reviews-slider-slide__inner"
+      ).height();
+      currentHeight += 70;
+      $(".market-reviews-slider .slick-track").height(currentHeight);
+      $(".market-reviews-slider").height(currentHeight);
+      $(".market-reviews-slider .slick-list.draggable").height(currentHeight);
+      $(".market-reviews-slider-slide.slick-slide").height(currentHeight);
+    }
+    $(".market-reviews-slider").on("afterChange", function () {
+      fixSliderHeight();
+    });
+    fixSliderHeight();
+  }
+
+  /**
+   * Opacity effect and offset for next and prev slides
+   */
   $(".market-reviews-slider").on("beforeChange", function () {
     var currentSlide = $(this).slick("slickCurrentSlide") + 1;
     var nextSlide = currentSlide + 1;
@@ -54,6 +89,20 @@ $(document).ready(function () {
   $('.market-reviews-slider-slide[data-slick-index="1"]').addClass(
     "market-reviews-slider-slide--next"
   );
+
+  $(".market-pricing-table").slick({
+    infinite: false,
+    dots: true,
+    arrows: true,
+    adaptiveHeight: true,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: "unslick",
+      },
+    ],
+  });
 
   /*
   	Toggle Dropdown
