@@ -1773,6 +1773,30 @@ section {
         }
       }
     }
+    &-thanks {
+      @include market-popup();
+      padding-top: 50px;
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-bottom: 50px;
+      &-checkmark {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &__desc {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 40px;
+      }
+      &__button {
+        @include buttonPrimary();
+      }
+    }
   }
 }
 
@@ -2058,6 +2082,7 @@ section {
   .market-brain-card__title,
   .market-callback-form__title,
   .market-popups-bundle__title,
+  .market-popups-thanks__title,
   .market-popups-callback__title {
     @include h2();
   }
@@ -2716,6 +2741,7 @@ section {
   .market-faq__title,
   .market-brain-card__title,
   .market-callback-form__title,
+  .market-popups-thanks__title,
   .market-popups-bundle__title,
   .market-popups-callback__title {
     @include h2();
@@ -3188,6 +3214,22 @@ section {
   .market-faq-dropdowns-dropdown-top-name__title {
     font-size: 17px;
   }
+  .market-popups-thanks__desc {
+    margin-bottom: 30px;
+  }
+  .market-popups-thanks {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .market-popups-thanks__button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 456px) {
   .market-truth-bank__desc {
@@ -3338,13 +3380,17 @@ section {
     padding-right: 0;
   }
 }
-
 .page-market .poppa__closer {
   font-weight: 100;
-  top: 0;
-  right: 0;
+}
+@media (max-width: 1200px) {
+  .page-market .poppa__closer {
+    font-weight: 100;
+    top: 0;
+    right: 0;
+  }
 }
 
-.market-popups {
-  display: none;
-}
+// .market-popups {
+// display: none;
+// }

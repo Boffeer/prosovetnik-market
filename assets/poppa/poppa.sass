@@ -1,7 +1,65 @@
+.poppa--zoom-in
+	transform: scale(0.2)
+
+.poppa--zoom-in.poppa--opened
+	transform: scale(1)
+
+.poppa--zoom-out
+	transform: scale(2.2)
+
+.poppa--zoom-out.poppa--opened
+	transform: scale(1)
+
+.poppa--zoom-pong
+	transform: scale(0.5)
+@keyframes zoom-pong
+	30%
+		transform: scale(1.4)
+	60%
+		transform: scale(0.9)
+	100%
+		transform: scale(1)
+
+.poppa--zoom-pong.poppa--opened
+	animation: zoom-pong 0.5s!important
+	transform: scale(1)
+
+.poppa--zoom-out.poppa--opened
+	transform: scale(1)
+
+.poppa--fade-in
+	opacity: 0
+
+.poppa--fade-in.poppa--opened
+	opacity: 1
+
+.poppa--slide-up
+	transform: translateY(300px)
+
+.poppa--slide-up.poppa--opened
+	transform: translateY(0)
+
+.poppa--slide-down
+	transform: translateY(-300px)
+
+.poppa--slide-down.poppa--opened
+	transform: translateY(0)
+
+.poppa--slide-left
+	transform: translateX(50vw)
+
+.poppa--slide-left.poppa--opened
+	transform: translateX(0)
+
+.poppa--slide-right
+	transform: translateX(-50vw)
+
+.poppa--slide-right.poppa--opened
+	transform: translateX(0)
+
 html
 	--c-poppa-close: #FF3B30
 	--transition-delay-base: 0.2s
-
 
 // .poppa-html--opened
 .poppa-block-scrolling
@@ -14,11 +72,9 @@ html
 @media (min-width: 1400px) and (max-width: 1500px)
 	.poppa-block-scrolling
 		margin-right: 15px
-	
 
 .poppa-pops
 	display: none
-
 
 // __LAYOUT
 .poppa-overlay
@@ -37,6 +93,8 @@ html
 .poppa-overlay--opened
 	visibility: visible
 	opacity: 1
+	.poppa
+		transform: scale(1)
 
 .poppa-aligner
 	display: flex
@@ -58,7 +116,6 @@ html
 
 .poppa-aligner--bottom
 	align-items: flex-end
-
 
 // __CLOSERS
 .poppa__closer
@@ -108,69 +165,6 @@ html
 	border-radius: 10px
 	position: relative
 	background-color: #fff
-
-
-.poppa--zoom-in
-	transform: scale(0.2)
-
-.poppa--zoom-in.poppa--opened
-	transform: scale(1)
-
-
-.poppa--zoom-out
-	transform: scale(2.2)
-
-.poppa--zoom-out.poppa--opened
-	transform: scale(1)
-
-.poppa--zoom-pong
-	transform: scale(0.5)
-@keyframes zoom-pong
-	30%
-		transform: scale(1.4)
-	60%
-		transform: scale(0.9)
-	100%
-		transform: scale(1)
-
-		
-.poppa--zoom-pong.poppa--opened
-	animation: zoom-pong 0.5s!important
-	transform: scale(1)
-
-.poppa--zoom-out.poppa--opened
-	transform: scale(1)
-
-.poppa--fade-in
-	opacity: 0
-
-.poppa--fade-in.poppa--opened
-	opacity: 1
-
-
-.poppa--slide-up
-	transform: translateY(300px)
-
-.poppa--slide-up.poppa--opened
-	transform: translateY(0)
-
-.poppa--slide-down
-	transform: translateY(-300px)
-
-.poppa--slide-down.poppa--opened
-	transform: translateY(0)
-
-.poppa--slide-left
-	transform: translateX(50vw)
-
-.poppa--slide-left.poppa--opened
-	transform: translateX(0)
-
-.poppa--slide-right
-	transform: translateX(-50vw)
-
-.poppa--slide-right.poppa--opened
-	transform: translateX(0)
 
 // __TYPOGRAPHY
 .poppa--simple-text

@@ -169,13 +169,16 @@ $(document).ready(function () {
   poppa({
     pop: ".market-popups-bundle--standard",
     clickTrigger: ".market-pricing-table-bundle__enroll--standard",
-    animation: "zoom-in",
     closerType: "outer",
   });
   poppa({
     pop: ".market-popups-bundle--base",
     clickTrigger: ".market-pricing-table-bundle__enroll--base",
-    animation: "zoom-in",
+    closerType: "outer",
+  });
+  poppa({
+    pop: ".market-popups-thanks",
+    // clickTrigger: ".market-popups-thanks",
     closerType: "outer",
   });
 });
