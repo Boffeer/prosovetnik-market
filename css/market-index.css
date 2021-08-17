@@ -1871,6 +1871,7 @@ section {
   margin-left: 80px;
   padding-bottom: 60px;
   background-position: center right;
+  z-index: 1;
 }
 
 .market-brain-card__text {
@@ -1974,20 +1975,6 @@ section {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   background: #c61508;
-}
-
-.market-brain-card__enroll span {
-  z-index: 3;
-  position: relative;
-}
-
-.market-brain-card__enroll:before {
-  z-index: 0;
-}
-
-.market-brain-card__enroll:hover:bofore {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#c61508));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #c61508 100%);
 }
 
 .market-brain__smoke-left {

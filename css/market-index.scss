@@ -1349,6 +1349,7 @@ section {
       margin-left: 80px;
       padding-bottom: 60px;
       background-position: center right;
+      z-index: 1;
       &__brain {
         position: absolute;
         width: 370px;
@@ -1377,25 +1378,9 @@ section {
       }
       &__enroll {
         @include buttonPrimary();
-        // z-index: 2;
         max-width: 342px;
         background: transparent;
         transition: 0.3s all;
-        span {
-          z-index: 3;
-          position: relative;
-        }
-        &:before {
-          z-index: 0;
-        }
-        &:hover:bofore {
-          background: linear-gradient(
-            180deg,
-            #c61508 0%,
-            #c61508 0.01%,
-            #c61508 100%
-          );
-        }
       }
     }
     &__smoke-left {
