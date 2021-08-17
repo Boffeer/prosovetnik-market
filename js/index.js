@@ -109,6 +109,7 @@ $(document).ready(function () {
    */
   function handleDropdown(dropdownsClassesArray) {
     dropdownsClassesArray.map(function (dropdownItemClass) {
+      var openFirstDropdownItemCounter = 0;
       $(dropdownItemClass).each(function () {
         $(this).on("click", function () {
           var parentClassList = $(this).parent().attr("class");
@@ -145,6 +146,10 @@ $(document).ready(function () {
               );
           }
         });
+        if (openFirstDropdownItemCounter == 0) {
+          $(this).trigger("click");
+          openFirstDropdownItemCounter++;
+        }
       });
     });
   }

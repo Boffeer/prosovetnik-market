@@ -549,24 +549,35 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   max-width: 342px;
 }
 
-.market-whois-cta:hover {
-  background: #c61508;
+.market-whois-cta:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-whois-cta:hover:active:foucs:before {
-  content: "";
+.market-whois-cta:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-whois-cta__icon {
@@ -1013,26 +1024,37 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   position: relative;
   margin-bottom: 94px;
   max-width: 350px;
 }
 
-.market-game-enroll:hover {
-  background: #c61508;
+.market-game-enroll:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-game-enroll:hover:active:foucs:before {
-  content: "";
+.market-game-enroll:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-game-enroll__icon {
@@ -1498,13 +1520,12 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   font-size: 16px;
   padding-left: 25px;
   padding-right: 25px;
@@ -1515,14 +1536,26 @@ section {
   margin-bottom: 20px;
 }
 
-.market-pricing-table-bundle__enroll:hover {
-  background: #c61508;
+.market-pricing-table-bundle__enroll:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-pricing-table-bundle__enroll:hover:active:foucs:before {
-  content: "";
+.market-pricing-table-bundle__enroll:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-pricing-table-bundle__enroll--inactive {
@@ -1910,26 +1943,51 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
-  position: relative;
-  z-index: 2;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   max-width: 342px;
+  background: transparent;
+  transition: 0.3s all;
 }
 
-.market-brain-card__enroll:hover {
-  background: #c61508;
+.market-brain-card__enroll:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-brain-card__enroll:hover:active:foucs:before {
-  content: "";
+.market-brain-card__enroll:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
+}
+
+.market-brain-card__enroll span {
+  z-index: 3;
+  position: relative;
+}
+
+.market-brain-card__enroll:before {
+  z-index: 0;
+}
+
+.market-brain-card__enroll:hover:bofore {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#c61508));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #c61508 100%);
 }
 
 .market-brain__smoke-left {
@@ -2071,25 +2129,36 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.market-callback-form__submit:hover {
-  background: #c61508;
+.market-callback-form__submit:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-callback-form__submit:hover:active:foucs:before {
-  content: "";
+.market-callback-form__submit:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-callback-form-privacy {
@@ -2372,30 +2441,36 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.market-popups-callback-form__submit:hover {
-  background: #c61508;
+.market-popups-callback-form__submit:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-popups-callback-form__submit:hover:active:foucs:before {
-  content: "";
-}
-
-.market-popups-callback-form__submit:before {
-  width: 104%;
-  left: -2.6%;
+.market-popups-callback-form__submit:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-popups-callback-form-privacy {
@@ -2651,30 +2726,36 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.market-popups-bundle-form__submit:hover {
-  background: #c61508;
+.market-popups-bundle-form__submit:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-popups-bundle-form__submit:hover:active:foucs:before {
-  content: "";
-}
-
-.market-popups-bundle-form__submit:before {
-  width: 104%;
-  left: -2.6%;
+.market-popups-bundle-form__submit:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-popups-bundle-form-privacy {
@@ -3000,30 +3081,36 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.market-popups-thanks-form__submit:hover {
-  background: #c61508;
+.market-popups-thanks-form__submit:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-popups-thanks-form__submit:hover:active:foucs:before {
-  content: "";
-}
-
-.market-popups-thanks-form__submit:before {
-  width: 104%;
-  left: -2.6%;
+.market-popups-thanks-form__submit:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-popups-thanks-form-privacy {
@@ -3120,23 +3207,34 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  background-color: #c61508;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
-  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
   -webkit-box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
           box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
   border-radius: 12px;
   position: relative;
-}
-
-.market-popups-thanks__button:hover {
-  background: #c61508;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.market-popups-thanks__button:hover:active:foucs:before {
+.market-popups-thanks__button:before {
   content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c61508), color-stop(0.01%, #c61508), to(#940606));
+  background: linear-gradient(180deg, #c61508 0%, #c61508 0.01%, #940606 100%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.market-popups-thanks__button:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background: #c61508;
 }
 
 .market-pricing-table-bundle-cell__title {
